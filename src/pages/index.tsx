@@ -120,10 +120,10 @@ const Home: NextPage = () => {
                 data-mint-loading={isMintLoading}
                 data-mint-started={isMintStarted}
                 onClick={() =>
-                  DevMint?.({
+                  freeMint?.({
                     ...contractConfig,
                     functionName: 'freeMint',
-                    args: '1',
+                    args: [1],
                   })
                 }
               >
@@ -135,15 +135,15 @@ const Home: NextPage = () => {
 {mounted && isConnected && !isMinted && (
         <button
                 style={{ marginTop: 24 }}
-                disabled={!DevMint || isMintLoading || isMintStarted}
+                disabled={!publicMint || isMintLoading || isMintStarted}
                 className="button"
                 data-mint-loading={isMintLoading}
                 data-mint-started={isMintStarted}
                 onClick={() =>
-                  DevMint?.({
+                  publicMint?.({
                     ...contractConfig,
                     functionName: 'publicMint',
-                    args: '1',
+                    args: [1],
                   })
                 }
               >
@@ -155,15 +155,15 @@ const Home: NextPage = () => {
 {mounted && isConnected && !isMinted && (
               <button
                 style={{ marginTop: 24 }}
-                disabled={!DevMint || isMintLoading || isMintStarted}
+                disabled={!publicMint || isMintLoading || isMintStarted}
                 className="button"
                 data-mint-loading={isMintLoading}
                 data-mint-started={isMintStarted}
                 onClick={() =>
-                  DevMint?.({
+                  publicMint?.({
                     ...contractConfig,
                     functionName: 'publicMint',
-                    args: '2',
+                    args: [2],
                   })
                 }
               >
@@ -176,15 +176,15 @@ const Home: NextPage = () => {
               {mounted && isConnected && !isMinted && (
               <button
                 style={{ marginTop: 24 }}
-                disabled={!DevMint || isMintLoading || isMintStarted}
+                disabled={!publicMint || isMintLoading || isMintStarted}
                 className="button"
                 data-mint-loading={isMintLoading}
                 data-mint-started={isMintStarted}
                 onClick={() =>
-                  DevMint?.({
+                  publicMint?.({
                     ...contractConfig,
                     functionName: 'publicMint',
-                    args: '4',
+                    args: [4],
                   })
                 }
               >
