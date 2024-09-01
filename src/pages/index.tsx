@@ -16,7 +16,7 @@ import FlipCard, { BackCard, FrontCard } from '../../components/FlipCard';
 
 
 const contractConfig = {
-  address: '0x18bbB7aF32317ea69CA7850A4602956534EBd10A',
+  address: '0x1f7979C368c82dc647E075FfD61ed149052e3D6B',
   abi,
 } as const;
 
