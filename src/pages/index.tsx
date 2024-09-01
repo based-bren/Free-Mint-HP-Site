@@ -132,7 +132,7 @@ const Home: NextPage = () => {
                 {!isMintLoading && !isMintStarted && 'Free Mint'}
               </button>
       )}
-{mounted && isConnected && !isMinted && (
+{/* {mounted && isConnected && !isMinted && (
         <button
                 style={{ marginTop: 24 }}
                 disabled={!publicMint || isMintLoading || isMintStarted}
@@ -143,7 +143,7 @@ const Home: NextPage = () => {
                   publicMint?.({
                     ...contractConfig,
                     functionName: 'publicMint',
-                    args: [1],
+                    args: [2],
                   })
                 }
               >
@@ -192,7 +192,7 @@ const Home: NextPage = () => {
                 {isMintStarted && 'Minting...'}
                 {!isMintLoading && !isMintStarted && 'Mint 4'}
               </button>
-            )}
+            )} */}
 
 
 
